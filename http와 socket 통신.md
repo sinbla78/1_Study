@@ -15,7 +15,7 @@
 
 </aside>
 
-![Untitled](HTTP%20%E1%84%90%E1%85%A9%E1%86%BC%E1%84%89%E1%85%B5%E1%86%AB%E1%84%80%E1%85%AA%20Socket%20%E1%84%90%E1%85%A9%E1%86%BC%E1%84%89%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%8E%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%B7%201548cd3086bd4ab9af3b361afd49b8e6/Untitled.png)
+![](https://velog.velcdn.com/images/yhm75/post/10e5bd7e-3798-4fc3-887d-ea8adcce7dcf/image.png)
 
 > 클라이언트의 요청이 있을 때 서버가 응답하는 방식.
 > 
@@ -29,7 +29,7 @@
 
 - 소켓이란 두 프로그램이 서러 데이터를 주고 받을 수 있도록 양쪽에 생성되는 통신 단자이다.
 
-![Untitled](HTTP%20%E1%84%90%E1%85%A9%E1%86%BC%E1%84%89%E1%85%B5%E1%86%AB%E1%84%80%E1%85%AA%20Socket%20%E1%84%90%E1%85%A9%E1%86%BC%E1%84%89%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%8E%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%B7%201548cd3086bd4ab9af3b361afd49b8e6/Untitled%201.png)
+![](https://velog.velcdn.com/images/yhm75/post/76131fa9-6fbf-4389-88be-019332b9482c/image.png)
 
 - 소켓 통신이한 서버와 클라이언트 양방향 연결이 이루어지는 통신으로 클라이언트와 서버 모두 요청을 보낼 수있는 통신이다.
 
