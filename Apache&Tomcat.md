@@ -13,7 +13,8 @@
 ### 웹 서버란?
 
 - 클라이언트가 GET, POST 등의 메소드를 이용해 전송한 요청을 받아 HTML이나 오브젝트를 HTTP 프로토콜을 이용해 전송하는 프로그램입니다.
-![image](https://github.com/sinbla78/Study_1/assets/103175928/34720be3-b67c-4f66-8b4c-12b09b78e804)
+- ![image](https://github.com/sinbla78/Study_1/assets/103175928/06429c19-6ced-43cb-8467-88fd9ada5c4f)
+
 출처 : [https://developer.mozilla.org/ko/docs/Learn/Common_questions/What_is_a_web_server](https://developer.mozilla.org/ko/docs/Learn/Common_questions/What_is_a_web_server)
 
 ### 웹 서버가 필요한 이유?
