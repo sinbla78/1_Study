@@ -1,14 +1,14 @@
 # Apache&Tomcat
 
-날짜: 2023년 7월 3일
+날짜: 2023년 7월 10일
 발표자: 양희범
 주제: 서버
 
 # Apache란?
 
-![Untitled](Apache&Tomcat%203680becd9c45412c810ed5aaa82f10d1/Untitled.png)
+![image-20230712102250911](C:\Users\ay612\AppData\Roaming\Typora\typora-user-images\image-20230712102250911.png)
 
-- Apache는 세계에서 장 많이 쓰는 웹 서버 중 하나입니다
+- Apache는 세계에서 가장 많이 쓰는 웹 서버 중 하나입니다
 - Apache는 오픈 소스이기 때문에 누구든지 수정, 재배포가 가능합니다.
 - Apache는 다양한 기능을 제공하고 다른 웹 서버들에 구축이 쉽다는 이유로 많이 사용되고 있습니다.
 
@@ -16,7 +16,7 @@
 
 - 클라이언트가 GET, POST 등의 메소드를 이용해 전송한 요청을 받아 HTML이나 오브젝트를 HTTP 프로토콜을 이용해 전송하는 프로그램입니다.
 
-![출처 : [https://developer.mozilla.org/ko/docs/Learn/Common_questions/What_is_a_web_server](https://developer.mozilla.org/ko/docs/Learn/Common_questions/What_is_a_web_server)](Apache&Tomcat%203680becd9c45412c810ed5aaa82f10d1/Untitled%201.png)
+![](C:\Users\ay612\Desktop\Untitled.png)
 
 출처 : [https://developer.mozilla.org/ko/docs/Learn/Common_questions/What_is_a_web_server](https://developer.mozilla.org/ko/docs/Learn/Common_questions/What_is_a_web_server)
 
@@ -31,7 +31,7 @@
 
 - Tomcat이란 아파치 재단에서 만든 오픈 소스 WAS(Web Application Server)입니다.
 
-![출처 : [https://doitnow-man.tistory.com/109](https://doitnow-man.tistory.com/109)](Apache&Tomcat%203680becd9c45412c810ed5aaa82f10d1/Untitled%202.png)
+![image-20230712102355852](C:\Users\ay612\AppData\Roaming\Typora\typora-user-images\image-20230712102355852.png)
 
 출처 : [https://doitnow-man.tistory.com/109](https://doitnow-man.tistory.com/109)
 
@@ -42,10 +42,14 @@
 - 웹 서버를 포함하고 있기 때문에 웹 서버처럼 사용할 수도 있습니다.
 - DB 와 연결되어 트랜잭션 처리를 하거나 다른 시스템과의 연동 기능 또한 포함하고 있습니다. 그리고 웹 서버와 달리 요청에 대해 동적인 페이지를 만들 어 유연하게 응답할 수 있습니다.
 
+---
+
 ### **WAS가 필요한 이유**
 
 - 웹 서버는 정적인 컨텐츠만 제공하기 때문에 클라이언트의 요구에 유연하게 대처할 수 없습니다.
 - 다양한 클라이언트의 요구에 유연하게 대처하기 위해 DB와 연결해 데이터를 주고받거나 데이터 조작을 하여 동적인 페이지를 생성해 응답하기 위해 WAS를 사용하고 있습니다.
+
+---
 
 ### **Tomcat의 디렉토리 구조**
 
@@ -56,3 +60,5 @@
 - Logs: 서버의 로그 파일이 저장
 - Work: jsp 컨테이너와 다른 파일들이 생성하는 임시 디렉토리
 - Temp: 임시 저장 폴더
+
+---
