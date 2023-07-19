@@ -5,9 +5,7 @@
 주제: 서버
 
 # Apache란?
-
-![image-20230712102250911](C:\Users\ay612\AppData\Roaming\Typora\typora-user-images\image-20230712102250911.png)
-
+![image](https://github.com/sinbla78/Study_1/assets/103175928/b889d252-0b40-4743-937c-fbe4404f2b27)
 - Apache는 세계에서 가장 많이 쓰는 웹 서버 중 하나입니다
 - Apache는 오픈 소스이기 때문에 누구든지 수정, 재배포가 가능합니다.
 - Apache는 다양한 기능을 제공하고 다른 웹 서버들에 구축이 쉽다는 이유로 많이 사용되고 있습니다.
@@ -15,8 +13,8 @@
 ### 웹 서버란?
 
 - 클라이언트가 GET, POST 등의 메소드를 이용해 전송한 요청을 받아 HTML이나 오브젝트를 HTTP 프로토콜을 이용해 전송하는 프로그램입니다.
-
-![](C:\Users\ay612\Desktop\Untitled.png)
+  
+  ![image](https://github.com/sinbla78/Study_1/assets/103175928/06429c19-6ced-43cb-8467-88fd9ada5c4f)
 
 출처 : [https://developer.mozilla.org/ko/docs/Learn/Common_questions/What_is_a_web_server](https://developer.mozilla.org/ko/docs/Learn/Common_questions/What_is_a_web_server)
 
@@ -30,8 +28,7 @@
 # Tomcat이란?
 
 - Tomcat이란 아파치 재단에서 만든 오픈 소스 WAS(Web Application Server)입니다.
-
-![image-20230712102355852](C:\Users\ay612\AppData\Roaming\Typora\typora-user-images\image-20230712102355852.png)
+![image](https://github.com/sinbla78/Study_1/assets/103175928/29f2a216-13e8-4939-b1a3-7ea585739ea2)
 
 출처 : [https://doitnow-man.tistory.com/109](https://doitnow-man.tistory.com/109)
 
