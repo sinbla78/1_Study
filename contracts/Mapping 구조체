@@ -12,3 +12,19 @@ contract Example {
         books[_id] = Book(_tittle, _author);
     }
 }
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+//수정본
+// SPDX-License-Identifier: GPL 3.0
+
+pragma solidity ^0.8.13;
+contract Example {
+    //mapping (uint => Book) public books;
+    mapping(address => mapping(uint => Book)) public myBooks;
+    struct Book{
+        string tittle;
+        string author;
+    }
+    function addBook(uint _id, string memory _tittle, string memory _author) public {
+        myBooks[msg.sender][_id] = Book(_tittle, _author);
+    }
+}
