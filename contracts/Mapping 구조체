@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: GPL 3.0
+
+pragma solidity ^0.8.13;
+contract Example {
+    mapping(uint => string) public names;
+    mapping (uint => Book) public books;
+    struct Book{
+        string tittle;
+        string author;
+    }
+    function addBook(uint _id, string memory _tittle, string memory _author) public {
+        books[_id] = Book(_tittle, _author);
+    }
+}
