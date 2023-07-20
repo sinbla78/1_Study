@@ -1,25 +1,39 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-Lisence-Identifier: GPL-3.0
 pragma solidity ^0.8.13;
-
-contract Counter{
-//payable(지불)
+contract Hotel {
     address payable public owner;
-    constructor()  payable {
+    uint public counter;
+    enum Statuses {
+        Vacant,
+        Occupied
+    }
+    Statuses[5] public rooms = [Statuses.Vacant];
+    event Occupy(address _occuoant, uint _value);
+    Statuses currentStatus;
+    constructor() {
         owner = payable(msg.sender);
+        currentStatus = Statuses.Vacant;
     }
-    function deposit() public payable {
 
+    modifier cost(uint _amount) {
+        require(msg.value == _amount*(1 ether), "Invalid Money.");
+        _;
     }
-    function NotPayableDepisit() public {
-        
+
+    modifier Room {
+        require(counter < 5,"Not Room.");
+         _;
     }
-    function withdraw() public {
+
+    receive() external payable cost(99) Room{ 
+        rooms[counter++] = Statuses.Occupied;
+        //owner.transfer(msg.value);
+        emit Occupy(msg.sender, msg.value);
+    }
+    function salary() public {
         uint amount = address(this).balance;
         (bool success, ) = owner.call{value: amount}("");
         require(success, "Failed to send Ether");
     }
-    function transfer(address payable _to, uint _amount) public {
-        (bool success, ) = _to.call{value: _amount}("");
-        require(success, "Failed to send Enter");
-    }
+
 }
