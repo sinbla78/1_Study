@@ -11,7 +11,7 @@ contract HotelRoom {
     //1 상태변수 정의
     enum Statuses{Vacant, Occupied}
     Statuses currentStatus;
-    event Occupy(address _occupant, uint _value); //이밴트 정으ㅡ
+    event Occupy(address _occupant, uint _value); //이밴트 정의
     constructor() {
         owner = payable(msg.sender);
         currentStatus = Statuses.Vacant;
