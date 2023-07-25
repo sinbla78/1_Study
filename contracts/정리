@@ -1,0 +1,5 @@
+• Public : 모든 컨트랙트 및 계정에서 호출 가능
+• Private : 오직 컨트랙트 안에 정의된 함수에서만 사용 가능
+• Internal : internal 함수를 상속받은 컨트랙트 안에서 사용 가능
+• External : 오직 다른 컨트랙트나 계정에 의해서만 호출 가능
+• 상태변수는 public, private, internal에서 선언 가능(external에서는 불가

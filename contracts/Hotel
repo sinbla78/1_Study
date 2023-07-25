@@ -1,0 +1,33 @@
+// SPDX-Lisence-Identifier: GPL-3.0
+pragma solidity ^0.8.13;
+contract Hotel {
+    address payable public owner;
+    uint public counter;
+    enum Statuses {
+        Vacant,
+        Occupied
+    }
+    Statuses[10] public rooms = [Statuses.Vacant];
+    event Occupy(address _occuoant, uint _value);
+    Statuses currentStatus;
+    constructor() {
+        owner = payable(msg.sender);
+        currentStatus = Statuses.Vacant;
+    }
+
+    modifier costs(uint _amount) {
+        require(msg.value == 2 ether, "Invalid Money.");
+        _;
+    }
+
+    modifier RoomCheck{
+        require(counter < 10,"Not Room.");
+        _;
+    }
+
+    receive() external payable costs(2) RoomCheck{
+        rooms[counter++] = Statuses.Occupied;
+        owner.transfer(msg.value);
+        emit Occupy(msg.sender, msg.value);
+    }
+}
