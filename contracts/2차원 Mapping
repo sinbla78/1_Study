@@ -14,6 +14,3 @@ contract Example {
         delete nested[_addr1][_i];
     }
 }
-
-
-
